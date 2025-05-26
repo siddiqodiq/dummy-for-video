@@ -1,9 +1,8 @@
 <?php
-$host = 'localhost';
-$user = 'latsitarda_user';  // New user
-$pass = 'secure_password123'; // New password
-$dbname = 'latsitardanus_db';
-
+$host = getenv('DB_HOST') ?: 'db';
+$user = getenv('DB_USER') ?: 'latsitarda_user';
+$pass = getenv('DB_PASS') ?: 'secure_password123';
+$dbname = getenv('DB_NAME') ?: 'latsitardanus_db';
 $conn = new mysqli($host, $user, $pass, $dbname);
 if ($conn->connect_error) {
     die("Connection failed");
