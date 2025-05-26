@@ -65,4 +65,8 @@ This application is for demonstration purposes only and contains serious securit
 - Using default/empty MySQL credentials
 - No proper authentication/authorization
 
+<<<<<<< Updated upstream
 Do not use this configuration in production environments.
+=======
+Do not use this configuration in production environments.
+>>>>>>> Stashed changes
